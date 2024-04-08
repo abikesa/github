@@ -14,15 +14,15 @@
       - **Sensory/Morpheus**
       - Appearances
 2. Pentatonic: `walk`
-   - GitHub pages user: i.e., can navigate the internet
-   - Collaborator: logs into shared folder, updates shared files, version control
-   - Manages workflow: creates URLs for scripts, datasets, via upload 
-   - Pushes content from local machine using `ghp-import -n -p -f _build/html` on commandline
+   - Username.gihub.io/username by gh-pages for `Unsubscribed` end-user: i.e., anyone who can navigate the internet
+   - Github.com/username by `Basic` collaborator: i.e., anyone with an account logs into shared folder, updates shared files, discussions
+   - `Intermediate` collaborator: i.e., creates URLs for scripts, datasets, via upload 
+   - `Advanced` collaborator pushes content from local machine using `ghp-import -n -p -f _build/html` on commandline
       - Forks to backup a repo in case collaborator or self causes severe damage
       - Always clones fresh repo when starting to work on project
       - Never keeps local directory after a days work: deletes it
       - One repo is dedicated to troubleshooting commandline glitches: `abikesa/flow` 
-   - Leverages GitHub Actions for automation
+   - `Professional` collaborator leverages GitHub Actions for automation
       - **Cognitive/Hades**
       - Intellect
 ### Art
