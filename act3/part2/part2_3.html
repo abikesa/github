@@ -380,7 +380,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -396,6 +398,55 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-shakespeare-to-survival-a-journey-and-a-tool">1. From Shakespeare to Survival: A Journey and a Tool</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-greatest-shakespearean-comedy">The Greatest Shakespearean Comedy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#personal-reflection-the-observers-life">Personal Reflection: The Observer’s Life</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-kaplan-meier-app-from-self-to-service">The Kaplan-Meier App: From Self to Service</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tech-breakdown">Tech Breakdown</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecosystem-vision">Ecosystem Vision</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pitching-it-from-hopkins-to-the-world">Pitching It: From Hopkins to the World</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-1-hopkins-low-hanging-fruit">Phase 1: Hopkins (Low-Hanging Fruit)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pitch-45-min">Pitch (45 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#prep">Prep</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-2-other-institutions">Phase 2: Other Institutions</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pitch-tweak-15-20-min">Pitch Tweak (15-20 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Prep</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-3-beyond-academiadecision-making">Phase 3: Beyond Academia—Decision-Making</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pitch-framing-20-30-min">Pitch Framing (20-30 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tech-evolution">Tech Evolution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Prep</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-shakespeare-to-survival">Connecting Shakespeare to Survival</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2. From Shakespeare to Survival: A Journey and a Tool</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">The Greatest Shakespearean Comedy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Personal Reflection: The Observer’s Life</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">The Kaplan-Meier App: From Self to Service</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Tech Breakdown</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#technical-implementation-details">Technical Implementation Details</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#back-end-python">Back End (Python)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#front-end-javascript-html">Front End (JavaScript/HTML)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explanatory-notes-md-single-copy-paste">Explanatory Notes .md (Single Copy-Paste)</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -410,10 +461,10 @@ document.write(`
 <div style="display: flex; justify-content: center;">
     <iframe width="80%" height="400px" src="https://www.youtube.com/embed/klRb0_BAX9g?start=10201" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
-<figure class="align-default" id="id2">
+<figure class="align-default" id="id9">
 <a class="reference internal image-reference" href="https://www.ledr.com/colours/white.jpg"><img alt="https://www.ledr.com/colours/white.jpg" src="https://www.ledr.com/colours/white.jpg" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 33 </span><span class="caption-text"><em>He Does it Again</em>. If we can send AIs to visit other planets and perhaps galaxies, surely aliens coud do the same and visit us. Thus UFOs are not that much of a stretch, especially in a nuclear world – aliens have recognized the “arrival” of another intelligence that has learned to harness the energy of the stars. We must overcome biological imperatives: status, tribe, etc. It’s clear that AI is one such approach. Matrix</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 33 </span><span class="caption-text"><em>He Does it Again</em>. If we can send AIs to visit other planets and perhaps galaxies, surely aliens coud do the same and visit us. Thus UFOs are not that much of a stretch, especially in a nuclear world – aliens have recognized the “arrival” of another intelligence that has learned to harness the energy of the stars. We must overcome biological imperatives: status, tribe, etc. It’s clear that AI is one such approach. Matrix</span><a class="headerlink" href="#id9" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
 <div class="cell tag_hide-input docutils container">
@@ -555,12 +606,345 @@ document.write(`
 <img alt="../../_images/be180b9fcbdcf1e6157ac6249688e1a437c65d263b846f06ef45e8c433ee83cb.png" src="../../_images/be180b9fcbdcf1e6157ac6249688e1a437c65d263b846f06ef45e8c433ee83cb.png" />
 </div>
 </div>
-<figure class="align-default" id="id3">
+<figure class="align-default" id="id10">
 <a class="reference internal image-reference" href="figures/blanche.*"><img alt="figures/blanche.*" src="figures/blanche.*" style="width: 1px; height: 1px;" /></a>
 <figcaption>
-<p><span class="caption-number">Fig. 34 </span><span class="caption-text">Glenn Gould and Leonard Bernstein famously disagreed over the tempo and interpretation of Brahms’ First Piano Concerto during a 1962 New York Philharmonic concert, where Bernstein, conducting, publicly distanced himself from Gould’s significantly slower-paced interpretation before the performance began, expressing his disagreement with the unconventional approach while still allowing Gould to perform it as planned; this event is considered one of the most controversial moments in classical music history.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+<p><span class="caption-number">Fig. 34 </span><span class="caption-text">Glenn Gould and Leonard Bernstein famously disagreed over the tempo and interpretation of Brahms’ First Piano Concerto during a 1962 New York Philharmonic concert, where Bernstein, conducting, publicly distanced himself from Gould’s significantly slower-paced interpretation before the performance began, expressing his disagreement with the unconventional approach while still allowing Gould to perform it as planned; this event is considered one of the most controversial moments in classical music history.</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
 </figcaption>
 </figure>
+<section id="from-shakespeare-to-survival-a-journey-and-a-tool">
+<h2>1. From Shakespeare to Survival: A Journey and a Tool<a class="headerlink" href="#from-shakespeare-to-survival-a-journey-and-a-tool" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="the-greatest-shakespearean-comedy">
+<h2>The Greatest Shakespearean Comedy<a class="headerlink" href="#the-greatest-shakespearean-comedy" title="Permalink to this heading">#</a></h2>
+<p>The debate kicked off with Shakespeare’s comedies. <em>A Midsummer Night’s Dream</em> (1595-1596) often tops the list—its fairy mischief, love tangles, and Bottom’s donkey-headed antics make it a comedic masterpiece. Think Puck’s chaos and the rude mechanicals’ absurd play-within-a-play. Yet <em>As You Like It</em> (1599) holds its own, especially in the pastoral realm. Its Forest of Arden swaps <em>Midsummer</em>’s magic for grounded wit, led by Rosalind’s Ganymede gambit and Jaques’ “All the world’s a stage” musings. Compared to Sidney’s dense <em>Arcadia</em>, <em>As You Like It</em> shines with breezy humor and humanity.</p>
+<p>Jaques stole the show for me—his observer’s perch, never joining the revelry, hit home. His clash with Orlando in Act 3, Scene 2—“I do desire we may be better strangers” after Jaques’ christening jab—is peak wit. It’s a microcosm of cynicism vs. youthful fire.</p>
+</section>
+<section id="personal-reflection-the-observers-life">
+<h2>Personal Reflection: The Observer’s Life<a class="headerlink" href="#personal-reflection-the-observers-life" title="Permalink to this heading">#</a></h2>
+<p>Jaques’ sidelines vibe mirrored my own. At 45, I’ve excelled at watching—dated 3-5 stunning women across my networks, attended elite institutions from childhood to adulthood, and plumbed the “massive combinatorial search space” of self. Avoidance was my card, dealt by life, not chosen. It worked—until now. The bill’s due; I owe “neighbor” and “god” after building a benchmark to calibrate my next moves.</p>
+</section>
+<section id="the-kaplan-meier-app-from-self-to-service">
+<h2>The Kaplan-Meier App: From Self to Service<a class="headerlink" href="#the-kaplan-meier-app-from-self-to-service" title="Permalink to this heading">#</a></h2>
+<p>That benchmark became an app—two overlaid Kaplan-Meier (KM) curves, personalized for living kidney donors. It pulls a .csv (multivariable regression betas, variance-covariance matrix) from peer-reviewed lit, hosted on GitHub Pages (.js, .html). The curves (donor vs. non-donor survival) come with 95% confidence intervals (CIs), letting users intuit attributable risk and uncertainty. It’s generalizable—swap kidneys for cancer, heart transplants, anything time-to-event.</p>
+<section id="tech-breakdown">
+<h3>Tech Breakdown<a class="headerlink" href="#tech-breakdown" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Back End:</strong> Python (lifelines for KM, NumPy/SciPy for matrix math) crunches the .csv, adjusts covariates (age, sex, eGFR), and computes CIs via the variance-covariance matrix.</p></li>
+<li><p><strong>Front End:</strong> JavaScript (D3.js?) renders interactive curves; HTML hosts it.</p></li>
+<li><p><strong>Output:</strong> Overlayed KM curves—e.g., S_control(t) - S_donor(t) for risk difference, CIs via delta method or bootstrap.</p></li>
+</ul>
+</section>
+<section id="ecosystem-vision">
+<h3>Ecosystem Vision<a class="headerlink" href="#ecosystem-vision" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Back End:</strong> An idealized flow—lit data → stats → insights. Like Jaques observing Arden’s chaos.</p></li>
+<li><p><strong>Front End:</strong> Navigation vibes—intuitive, Rosalind guiding users through the forest.</p></li>
+</ul>
+</section>
+</section>
+<section id="pitching-it-from-hopkins-to-the-world">
+<h2>Pitching It: From Hopkins to the World<a class="headerlink" href="#pitching-it-from-hopkins-to-the-world" title="Permalink to this heading">#</a></h2>
+<section id="phase-1-hopkins-low-hanging-fruit">
+<h3>Phase 1: Hopkins (Low-Hanging Fruit)<a class="headerlink" href="#phase-1-hopkins-low-hanging-fruit" title="Permalink to this heading">#</a></h3>
+<p>Hopkins—Department of Surgery (Transplantation), Epidemiology, Biostatistics, Data Science, PAIRS&#64;JH (Python, AI, R, Stata, JS, Jupyter Books)—is the launchpad.</p>
+<section id="pitch-45-min">
+<h4>Pitch (45 min)<a class="headerlink" href="#pitch-45-min" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Hook (5 min):</strong> “From Jaques’ sidelines to your clinics—I’ve built a KM app for kidney donors. It’s live at Hopkins, ready for you.”</p></li>
+<li><p><strong>Problem (10 min):</strong></p>
+<ul>
+<li><p><em>Surgery:</em> Consent needs visuals, not p-values.</p></li>
+<li><p><em>Epi:</em> Risk and uncertainty buried in papers.</p></li>
+<li><p><em>Biostats:</em> KM overlay with CIs isn’t easy.</p></li>
+<li><p><em>PAIRS:</em> Students need real-world coding projects.</p></li>
+</ul>
+</li>
+<li><p><strong>Solution (15 min):</strong></p>
+<ul>
+<li><p>Two KM curves, personalized, with CIs—donor vs. non-donor.</p></li>
+<li><p><em>Surgery:</em> Show a 40-year-old their 10-year risk.</p></li>
+<li><p><em>Epi:</em> Spot survival gaps instantly.</p></li>
+<li><p><em>Biostats:</em> Covariate-adjusted KM, live uncertainty.</p></li>
+<li><p><em>PAIRS:</em> Python back end, JS front end—hackable.</p></li>
+</ul>
+</li>
+<li><p><strong>Tech (10 min):</strong> Python processes, JS visualizes, GitHub Pages hosts.</p></li>
+<li><p><strong>Ask (10 min):</strong> Test with donor data, teach it, fund a pilot.</p></li>
+<li><p><strong>Close (5 min):</strong> “I avoided the game, mapped the self, now I serve. Who’s in?”</p></li>
+</ul>
+</section>
+<section id="prep">
+<h4>Prep<a class="headerlink" href="#prep" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Demo: Dummy donor curves, live on GitHub Pages.</p></li>
+<li><p>Collab: Integrate their registry data.</p></li>
+<li><p>PAIRS: Workshop—code from .csv to curves.</p></li>
+</ul>
+</section>
+</section>
+<section id="phase-2-other-institutions">
+<h3>Phase 2: Other Institutions<a class="headerlink" href="#phase-2-other-institutions" title="Permalink to this heading">#</a></h3>
+<p>After Hopkins, hit Mayo, UCLA, Harvard (HSPH, MGH), UNC, Emory, Columbia, UW, Stanford, Penn.</p>
+<section id="pitch-tweak-15-20-min">
+<h4>Pitch Tweak (15-20 min)<a class="headerlink" href="#pitch-tweak-15-20-min" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Hook:</strong> “Hopkins validated it—KM curves for donors, ready for your data.”</p></li>
+<li><p><strong>Why They Care:</strong></p>
+<ul>
+<li><p><em>Transplant:</em> Patient risk visuals.</p></li>
+<li><p><em>Public Health:</em> Population insights.</p></li>
+<li><p><em>Data Science:</em> Open-source playground.</p></li>
+</ul>
+</li>
+<li><p><strong>Ask:</strong> Test it, co-author, fund multi-site work.</p></li>
+<li><p><strong>Edge:</strong> “Proven at Hopkins, scalable here.”</p></li>
+</ul>
+</section>
+<section id="id2">
+<h4>Prep<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Demo: Plug in their lit (e.g., UNOS data).</p></li>
+<li><p>Show portability: Any .csv, any cohort.</p></li>
+</ul>
+</section>
+</section>
+<section id="phase-3-beyond-academiadecision-making">
+<h3>Phase 3: Beyond Academia—Decision-Making<a class="headerlink" href="#phase-3-beyond-academiadecision-making" title="Permalink to this heading">#</a></h3>
+<p>The endgame—policy (CMS, WHO, NIH), insurance (Aetna, Oscar), tech (Google Health, Apple), and personal choices.</p>
+<section id="pitch-framing-20-30-min">
+<h4>Pitch Framing (20-30 min)<a class="headerlink" href="#pitch-framing-20-30-min" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Hook:</strong> “Life’s choices, distilled—KM curves for health, wealth, anything.”</p></li>
+<li><p><strong>Leap:</strong></p>
+<ul>
+<li><p><em>Policy:</em> CMS funds via risk trade-offs.</p></li>
+<li><p><em>Insurance:</em> Price policies with survival data.</p></li>
+<li><p><em>Tech:</em> Embed in wearables—real-time risk.</p></li>
+<li><p><em>Personal:</em> Retire? Move? See the odds.</p></li>
+</ul>
+</li>
+<li><p><strong>Why It Works:</strong></p>
+<ul>
+<li><p>Back end: Universal data-to-stats logic.</p></li>
+<li><p>Front end: Intuitive for all.</p></li>
+</ul>
+</li>
+<li><p><strong>Ask:</strong> Pilot (e.g., CMS dialysis, Google dashboards), license, scale.</p></li>
+<li><p><strong>Vision:</strong> “From observer to enabler—decision clarity for all.”</p></li>
+</ul>
+</section>
+<section id="tech-evolution">
+<h4>Tech Evolution<a class="headerlink" href="#tech-evolution" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p><strong>Back End:</strong> APIs over .csvs, cloud-hosted (AWS?).</p></li>
+<li><p><strong>Front End:</strong> Mobile-ready (React Native), “what-if” sliders.</p></li>
+<li><p><strong>Output:</strong> Time-to-event for anything—survival, bankruptcy, etc.</p></li>
+</ul>
+</section>
+<section id="id3">
+<h4>Prep<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h4>
+<ul class="simple">
+<li><p>Demo: Non-medical—e.g., startup “survival” vs. industry.</p></li>
+<li><p>Sell uncertainty: “Decisions are ranges—we show them.”</p></li>
+</ul>
+</section>
+</section>
+</section>
+<section id="connecting-shakespeare-to-survival">
+<h2>Connecting Shakespeare to Survival<a class="headerlink" href="#connecting-shakespeare-to-survival" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><em>Midsummer:</em> Puck’s chaos = data wrangling; my app brings order.</p></li>
+<li><p><em>As You Like It:</em> Jaques’ reflection = my shift from self to service.</p></li>
+<li><p><em>App:</em> A tool born of observation, now joining the revelry—for patients, researchers, decision-makers.</p></li>
+</ul>
+</section>
+<section id="next-steps">
+<h2>Next Steps<a class="headerlink" href="#next-steps" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Hopkins:</strong> Demo, collab, workshop.</p></li>
+<li><p><strong>Institutions:</strong> Validate, scale.</p></li>
+<li><p><strong>Decision-Making:</strong> Pilot wild use cases—policy, tech, life.</p></li>
+</ul>
+<p>From Arden to attribution, this is my debt repaid—clarity for a chaotic world.</p>
+</section>
+<section id="id4">
+<h2>2. From Shakespeare to Survival: A Journey and a Tool<a class="headerlink" href="#id4" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="id5">
+<h2>The Greatest Shakespearean Comedy<a class="headerlink" href="#id5" title="Permalink to this heading">#</a></h2>
+<p>The debate kicked off with Shakespeare’s comedies. <em>A Midsummer Night’s Dream</em> (1595-1596) often tops the list—its fairy mischief, love tangles, and Bottom’s donkey-headed antics make it a comedic masterpiece. Think Puck’s chaos and the rude mechanicals’ absurd play-within-a-play. Yet <em>As You Like It</em> (1599) holds its own, especially in the pastoral realm. Its Forest of Arden swaps <em>Midsummer</em>’s magic for grounded wit, led by Rosalind’s Ganymede gambit and Jaques’ “All the world’s a stage” musings. Compared to Sidney’s dense <em>Arcadia</em>, <em>As You Like It</em> shines with breezy humor and humanity.</p>
+<p>Jaques stole the show for me—his observer’s perch, never joining the revelry, hit home. His clash with Orlando in Act 3, Scene 2—“I do desire we may be better strangers” after Jaques’ christening jab—is peak wit. It’s a microcosm of cynicism vs. youthful fire.</p>
+</section>
+<section id="id6">
+<h2>Personal Reflection: The Observer’s Life<a class="headerlink" href="#id6" title="Permalink to this heading">#</a></h2>
+<p>Jaques’ sidelines vibe mirrored my own. At 45, I’ve excelled at watching—dated 3-5 stunning women across my networks, attended elite institutions from childhood to adulthood, and plumbed the “massive combinatorial search space” of self. Avoidance was my card, dealt by life, not chosen. It worked—until now. The bill’s due; I owe “neighbor” and “god” after building a benchmark to calibrate my next moves.</p>
+</section>
+<section id="id7">
+<h2>The Kaplan-Meier App: From Self to Service<a class="headerlink" href="#id7" title="Permalink to this heading">#</a></h2>
+<p>That benchmark became an app—two overlaid Kaplan-Meier (KM) curves, personalized for living kidney donors. It pulls a .csv (multivariable regression betas, variance-covariance matrix) from peer-reviewed lit, hosted on GitHub Pages (.js, .html). The curves (donor vs. non-donor survival) come with 95% confidence intervals (CIs), letting users intuit attributable risk and uncertainty. It’s generalizable—swap kidneys for cancer, heart transplants, anything time-to-event.</p>
+<section id="id8">
+<h3>Tech Breakdown<a class="headerlink" href="#id8" title="Permalink to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Back End:</strong> Python (lifelines for KM, NumPy/SciPy for matrix math) crunches the .csv, adjusts covariates (age, sex, eGFR), and computes CIs via the variance-covariance matrix.</p></li>
+<li><p><strong>Front End:</strong> JavaScript (D3.js?) renders interactive curves; HTML hosts it.</p></li>
+<li><p><strong>Output:</strong> Overlayed KM curves—e.g., S_control(t) - S_donor(t) for risk difference, CIs via delta method or bootstrap.</p></li>
+</ul>
+</section>
+<section id="technical-implementation-details">
+<h3>Technical Implementation Details<a class="headerlink" href="#technical-implementation-details" title="Permalink to this heading">#</a></h3>
+<p>Here’s how it’s built, step-by-step, with code snippets and deployment notes.</p>
+<section id="back-end-python">
+<h4>Back End (Python)<a class="headerlink" href="#back-end-python" title="Permalink to this heading">#</a></h4>
+<ul>
+<li><p><strong>Libraries:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">lifelines</span></code>: Fits KM curves, handles survival analysis.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pandas</span></code>: Loads and processes .csv (e.g., <code class="docutils literal notranslate"><span class="pre">data.csv</span></code> with betas, covars).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">numpy</span></code>: Matrix ops for variance-covariance handling.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">scipy</span></code>: Stats functions (e.g., CI calc).</p></li>
+</ul>
+</li>
+<li><p><strong>Data Input:</strong></p>
+<ul class="simple">
+<li><p>.csv format: Columns for time, event (1=death, 0=censored), covariates (age, sex), plus beta vector and variance-covariance matrix (from lit regression).</p></li>
+<li><p>Example: <code class="docutils literal notranslate"><span class="pre">time,</span> <span class="pre">event,</span> <span class="pre">age,</span> <span class="pre">sex,</span> <span class="pre">beta_age,</span> <span class="pre">beta_sex,</span> <span class="pre">covar_age_sex</span></code>.</p></li>
+</ul>
+</li>
+<li><p><strong>Processing:</strong></p>
+<ol class="arabic">
+<li><p>Load data: <code class="docutils literal notranslate"><span class="pre">df</span> <span class="pre">=</span> <span class="pre">pd.read_csv('data.csv')</span></code>.</p></li>
+<li><p>Fit KM for two groups (donor, non-donor):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">lifelines</span> <span class="kn">import</span> <span class="n">KaplanMeierFitter</span>
+<span class="n">kmf_donor</span> <span class="o">=</span> <span class="n">KaplanMeierFitter</span><span class="p">()</span>
+<span class="n">kmf_control</span> <span class="o">=</span> <span class="n">KaplanMeierFitter</span><span class="p">()</span>
+<span class="n">donor_mask</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;donor&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="n">kmf_donor</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">donor_mask</span><span class="p">][</span><span class="s1">&#39;time&#39;</span><span class="p">],</span> <span class="n">event_observed</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="n">donor_mask</span><span class="p">][</span><span class="s1">&#39;event&#39;</span><span class="p">])</span>
+<span class="n">kmf_control</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">donor_mask</span><span class="p">][</span><span class="s1">&#39;time&#39;</span><span class="p">],</span> <span class="n">event_observed</span><span class="o">=</span><span class="n">df</span><span class="p">[</span><span class="o">~</span><span class="n">donor_mask</span><span class="p">][</span><span class="s1">&#39;event&#39;</span><span class="p">])</span>
+</pre></div>
+</div>
+</li>
+<li><p>Adjust for covariates using betas:</p>
+<ul class="simple">
+<li><p>Hazard tweak: <code class="docutils literal notranslate"><span class="pre">h(t)</span> <span class="pre">=</span> <span class="pre">h_0(t)</span> <span class="pre">*</span> <span class="pre">exp(beta_age</span> <span class="pre">*</span> <span class="pre">age</span> <span class="pre">+</span> <span class="pre">beta_sex</span> <span class="pre">*</span> <span class="pre">sex)</span></code>.</p></li>
+<li><p>Simulate adjusted survival: Monte Carlo sampling from variance-covariance for CI bounds.</p></li>
+</ul>
+</li>
+<li><p>Export: Save KM points (time, survival prob, CI_lower, CI_upper) as JSON:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">json</span>
+<span class="n">output</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">&#39;donor&#39;</span><span class="p">:</span> <span class="n">kmf_donor</span><span class="o">.</span><span class="n">survival_function_</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span>
+    <span class="s1">&#39;control&#39;</span><span class="p">:</span> <span class="n">kmf_control</span><span class="o">.</span><span class="n">survival_function_</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span>
+    <span class="s1">&#39;ci_donor&#39;</span><span class="p">:</span> <span class="n">kmf_donor</span><span class="o">.</span><span class="n">confidence_interval_</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(),</span>
+    <span class="s1">&#39;ci_control&#39;</span><span class="p">:</span> <span class="n">kmf_control</span><span class="o">.</span><span class="n">confidence_interval_</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+<span class="p">}</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;km_data.json&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">output</span><span class="p">,</span> <span class="n">f</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</li>
+<li><p><strong>Scalability:</strong> Precompute for static lit data; real-time API (Flask) for dynamic inputs later.</p></li>
+</ul>
+</section>
+<section id="front-end-javascript-html">
+<h4>Front End (JavaScript/HTML)<a class="headerlink" href="#front-end-javascript-html" title="Permalink to this heading">#</a></h4>
+<ul>
+<li><p><strong>Libraries:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">D3.js</span></code>: Plots curves, CIs as shaded areas.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jQuery</span></code>: Fetches JSON, handles UI.</p></li>
+</ul>
+</li>
+<li><p><strong>Structure:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">index.html</span></code>: Container <code class="docutils literal notranslate"><span class="pre">&lt;div</span> <span class="pre">id=&quot;chart&quot;&gt;&lt;/div&gt;</span></code>, loads <code class="docutils literal notranslate"><span class="pre">app.js</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">app.js</span></code>: Fetches <code class="docutils literal notranslate"><span class="pre">km_data.json</span></code>, renders overlay.</p></li>
+</ul>
+</li>
+<li><p><strong>Rendering:</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="nx">d3</span><span class="p">.</span><span class="nx">json</span><span class="p">(</span><span class="s1">&#39;km_data.json&#39;</span><span class="p">).</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">svg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">d3</span><span class="p">.</span><span class="nx">select</span><span class="p">(</span><span class="s1">&#39;#chart&#39;</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;svg&#39;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;width&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">600</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;height&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">400</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">xScale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">d3</span><span class="p">.</span><span class="nx">scaleLinear</span><span class="p">().</span><span class="nx">domain</span><span class="p">([</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="nx">d3</span><span class="p">.</span><span class="nx">max</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">donor</span><span class="p">.</span><span class="nx">time</span><span class="p">)]).</span><span class="nx">range</span><span class="p">([</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">550</span><span class="p">]);</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">yScale</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">d3</span><span class="p">.</span><span class="nx">scaleLinear</span><span class="p">().</span><span class="nx">domain</span><span class="p">([</span><span class="mf">0</span><span class="p">,</span><span class="w"> </span><span class="mf">1</span><span class="p">]).</span><span class="nx">range</span><span class="p">([</span><span class="mf">350</span><span class="p">,</span><span class="w"> </span><span class="mf">0</span><span class="p">]);</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="c1">// Donor curve</span>
+<span class="w">    </span><span class="nx">svg</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">)</span>
+<span class="w">       </span><span class="p">.</span><span class="nx">datum</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">donor</span><span class="p">))</span>
+<span class="w">       </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">d3</span><span class="p">.</span><span class="nx">line</span><span class="p">().</span><span class="nx">x</span><span class="p">(</span><span class="nx">d</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">xScale</span><span class="p">(</span><span class="nx">d</span><span class="p">[</span><span class="mf">0</span><span class="p">])).</span><span class="nx">y</span><span class="p">(</span><span class="nx">d</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">yScale</span><span class="p">(</span><span class="nx">d</span><span class="p">[</span><span class="mf">1</span><span class="p">])))</span>
+<span class="w">       </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;stroke&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;blue&#39;</span><span class="p">);</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="c1">// Control curve</span>
+<span class="w">    </span><span class="nx">svg</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">)</span>
+<span class="w">       </span><span class="p">.</span><span class="nx">datum</span><span class="p">(</span><span class="nb">Object</span><span class="p">.</span><span class="nx">entries</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">control</span><span class="p">))</span>
+<span class="w">       </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">d3</span><span class="p">.</span><span class="nx">line</span><span class="p">().</span><span class="nx">x</span><span class="p">(</span><span class="nx">d</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">xScale</span><span class="p">(</span><span class="nx">d</span><span class="p">[</span><span class="mf">0</span><span class="p">])).</span><span class="nx">y</span><span class="p">(</span><span class="nx">d</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">yScale</span><span class="p">(</span><span class="nx">d</span><span class="p">[</span><span class="mf">1</span><span class="p">])))</span>
+<span class="w">       </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;stroke&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;red&#39;</span><span class="p">);</span>
+<span class="w">    </span>
+<span class="w">    </span><span class="c1">// CIs (shaded)</span>
+<span class="w">    </span><span class="nx">svg</span><span class="p">.</span><span class="nx">append</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">)</span>
+<span class="w">       </span><span class="p">.</span><span class="nx">datum</span><span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">ci_donor</span><span class="p">)</span>
+<span class="w">       </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;d&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">d3</span><span class="p">.</span><span class="nx">area</span><span class="p">().</span><span class="nx">x</span><span class="p">(</span><span class="nx">d</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">xScale</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">time</span><span class="p">)).</span><span class="nx">y0</span><span class="p">(</span><span class="nx">d</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">yScale</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">lower</span><span class="p">)).</span><span class="nx">y1</span><span class="p">(</span><span class="nx">d</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">yScale</span><span class="p">(</span><span class="nx">d</span><span class="p">.</span><span class="nx">upper</span><span class="p">)))</span>
+<span class="w">       </span><span class="p">.</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;fill&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;blue&#39;</span><span class="p">).</span><span class="nx">attr</span><span class="p">(</span><span class="s1">&#39;opacity&#39;</span><span class="p">,</span><span class="w"> </span><span class="mf">0.2</span><span class="p">);</span>
+<span class="p">});</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="explanatory-notes-md-single-copy-paste">
+<h3>Explanatory Notes .md (Single Copy-Paste)<a class="headerlink" href="#explanatory-notes-md-single-copy-paste" title="Permalink to this heading">#</a></h3>
+<p>This contains the explanations that were previously outside the .md blocks, now formatted as a separate Markdown file.</p>
+<div class="highlight-markdown notranslate"><div class="highlight"><pre><span></span><span class="gh"># Explanatory Notes for Kaplan-Meier App Project</span>
+
+<span class="gu">## Purpose</span>
+These notes clarify the context, intent, and additional details behind the core content in the main .md file, separating commentary from the primary narrative for clarity and usability.
+
+<span class="gu">## Shakespearean Context</span>
+<span class="k">-</span><span class="w"> </span><span class="gs">**Why Midsummer and As You Like It?**</span> The debate started with identifying Shakespeare’s greatest comedy. <span class="ge">*Midsummer*</span> was picked for its whimsical chaos, tying to the app’s data-wrangling roots. <span class="ge">*As You Like It*</span>’s pastoral depth, especially Jaques, reflects the observer-to-contributor shift in my story.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Jaques’ Role:**</span> His outsider wit mirrors my life’s avoidance, making him a thematic anchor for the app’s origin.
+
+<span class="gu">## Personal Reflection Notes</span>
+<span class="k">-</span><span class="w"> </span><span class="gs">**Observer’s Life:**</span> The “3-5 stunning women” and “elite institutions” are specific to my experience, showing a life of privilege and detachment. “Massive combinatorial search space” is a nod to exhaustive self-exploration—mathy, but personal.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Debt to Neighbor and God:**</span> This is the pivot—45 years of watching, now turning outward. It’s philosophical, not literal, driving the app’s purpose.
+
+ ## App Concept
+<span class="k">-</span><span class="w"> </span><span class="gs">**Why KM Curves?**</span> Kaplan-Meier is nonparametric, ideal for messy survival data (e.g., kidney donors). Overlaying donor vs. non-donor with CIs visualizes risk and uncertainty intuitively.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Generalizability:**</span> The app’s core—time-to-event analysis—works beyond medicine (e.g., finance, tech), which fuels the Phase 3 pitch.
+
+<span class="gu">## Technical Implementation Notes</span>
+<span class="k">-</span><span class="w"> </span><span class="gs">**Back End (Python):**</span>
+<span class="w"> </span><span class="k">-</span><span class="w"> </span><span class="gs">**Libraries:**</span> <span class="sb">`lifelines`</span> is KM gold; <span class="sb">`pandas`</span> handles .csv mess; <span class="sb">`numpy`</span>/<span class="sb">`scipy`</span> crunch matrices and stats. 
+<span class="w"> </span><span class="k">-</span><span class="w"> </span><span class="gs">**Covariate Adjustment:**</span> Betas tweak hazards (Cox-like), but Monte Carlo sampling for CIs is a simplification—could use Greenwood’s formula for precision. 
+<span class="w"> </span><span class="k">-</span><span class="w"> </span><span class="gs">**JSON Export:**</span> Static for now; Flask API is a future step for real-time inputs.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Front End (JS/HTML):**</span>
+<span class="w"> </span><span class="k">-</span><span class="w"> </span><span class="gs">**D3.js Choice:**</span> Flexible for curves and CIs; could swap for Chart.js if simpler. <span class="sb">`jQuery`</span> is optional—vanilla JS works too. 
+<span class="w"> </span><span class="k">-</span><span class="w"> </span><span class="gs">**Rendering:**</span> Code assumes <span class="sb">`data.donor.time`</span> exists—needs error handling. CI shading stops at donor for brevity; control CI is implied.
+<span class="w"> </span><span class="k">-</span><span class="w"> </span><span class="gs">**Interactivity (Omitted):**</span> Tooltips (hover for survival probs) and sliders (covariate tweaks) are stretch goals, left out of core .md per cutoff request.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Deployment (GitHub Pages):**</span>
+<span class="w"> </span><span class="k">-</span><span class="w"> </span><span class="gs">**Static Limit:**</span> Precomputed JSON fits GitHub Pages; cloud (AWS Lambda) is for dynamic scaling, not current state.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Cutoff Rationale:**</span> Main .md ends at &quot;Rendering&quot; per user’s note, but &quot;Deployment&quot; is included as it’s core to execution.
+
+<span class="gu">## Pitching Strategy Notes</span>
+<span class="k">-</span><span class="w"> </span><span class="gs">**Hopkins as Launchpad:**</span> Low-hanging fruit due to transplant, biostats, and PAIRS@JH strengths—validates before scaling.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Phase 2 (Institutions):**</span> Targets reflect prestige and relevance—e.g., Mayo for transplant, UW for stats.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Phase 3 (Decision-Making):**</span> Wild leap—KM for non-medical use (e.g., startup survival) sells uncertainty as the killer app. Tech evolution (APIs, React Native) is speculative, not implemented.
+
+<span class="gu">## Shakespeare-App Connection</span>
+<span class="k">-</span><span class="w"> </span><span class="gs">**Midsummer:**</span> Puck’s chaos parallels data mess; app orders it like Oberon’s fix.
+<span class="k">-</span><span class="w"> </span><span class="gs">**As You Like It:**</span> Jaques’ shift from observer to commentator echoes my app’s service turn.
+
+<span class="gu">## Why Two Files?</span>
+<span class="k">-</span><span class="w"> </span><span class="gs">**Core .md:**</span> Pure content for pitches, repos, or docs—standalone and clean. 
+<span class="k">-</span><span class="w"> </span><span class="gs">**Notes .md:**</span> Explains intent, tech choices, and omissions for collaborators or future me, without bloating the main file.
+
+This keeps the project modular—content for show, notes for know-how.
+</pre></div>
+</div>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -617,6 +1001,62 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#from-shakespeare-to-survival-a-journey-and-a-tool">1. From Shakespeare to Survival: A Journey and a Tool</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-greatest-shakespearean-comedy">The Greatest Shakespearean Comedy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#personal-reflection-the-observers-life">Personal Reflection: The Observer’s Life</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-kaplan-meier-app-from-self-to-service">The Kaplan-Meier App: From Self to Service</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#tech-breakdown">Tech Breakdown</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#ecosystem-vision">Ecosystem Vision</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pitching-it-from-hopkins-to-the-world">Pitching It: From Hopkins to the World</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-1-hopkins-low-hanging-fruit">Phase 1: Hopkins (Low-Hanging Fruit)</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pitch-45-min">Pitch (45 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#prep">Prep</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-2-other-institutions">Phase 2: Other Institutions</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pitch-tweak-15-20-min">Pitch Tweak (15-20 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Prep</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#phase-3-beyond-academiadecision-making">Phase 3: Beyond Academia—Decision-Making</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pitch-framing-20-30-min">Pitch Framing (20-30 min)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tech-evolution">Tech Evolution</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Prep</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#connecting-shakespeare-to-survival">Connecting Shakespeare to Survival</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#next-steps">Next Steps</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">2. From Shakespeare to Survival: A Journey and a Tool</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">The Greatest Shakespearean Comedy</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Personal Reflection: The Observer’s Life</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">The Kaplan-Meier App: From Self to Service</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Tech Breakdown</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#technical-implementation-details">Technical Implementation Details</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#back-end-python">Back End (Python)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#front-end-javascript-html">Front End (JavaScript/HTML)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#explanatory-notes-md-single-copy-paste">Explanatory Notes .md (Single Copy-Paste)</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
